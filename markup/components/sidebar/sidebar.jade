@@ -1,0 +1,70 @@
+mixin sidebar(data)
+    .sidebar
+        .sidebar__top
+            .sidebar__padding: a(href="/").sidebar__logo: +img('assets/sidebar/logo', 'png')
+
+            ul.sidebar__menu
+                li.sidebar__menu-item: a(href="#").sidebar__menu-link.sidebar__padding
+                    span.sidebar__menu-link-block
+                        span Коллекторы
+                        span.sidebar__menu-link-block-icon: +icon('arrow-menu')
+                li.sidebar__menu-item: a(href="#").sidebar__menu-link.sidebar__padding
+                    span.sidebar__menu-link-block
+                        span Радиаторы
+                        span.sidebar__menu-link-block-icon: +icon('arrow-menu')
+                li.active.sidebar__menu-item
+                    a(href="#").sidebar__menu-link.sidebar__padding
+                        span.sidebar__menu-link-block
+                            span Арматура
+                            span.sidebar__menu-link-block-icon: +icon('arrow-menu')
+
+                    .sidebar__menu-submenu.sidebar__padding
+                        ul
+                            li: a(href='#').db.color-black #[span.color-black__title Запорная]
+                            li: a(href='#').db.color-black #[span.color-black__title Предохранительная и защитная]
+                            li.sidebar__menu-submenu-sub
+                                a(href='#').db.color-black #[span.color-black__title Распределительно-смесительная]
+                                ul
+                                    li: a(href='#').db.color-black: span.color-black__title Запорная
+                                    li: a(href='#').db.color-black: span.color-black__title Предохранительная и защитная
+                                    li: a(href='#').db.color-black: span.color-black__title Распределительно-смесительная
+                                    li.sidebar__menu-submenu-sub
+                                        a(href='#').db.color-black: span.color-black__title Регулирующая
+                                        ul
+                                            li: a(href='#').db.color-black: span.color-black__title Запорная
+                                            li: a(href='#').db.color-black: span.color-black__title Предохранительная и защитная
+                                            li: a(href='#').db.color-black: span.color-black__title Распределительно-смесительная
+                                            li: a(href='#').db.color-black: span.color-black__title Регулирующая
+
+                            li: a(href='#').db.color-black #[span.color-black__title Регулирующая]
+
+                li.sidebar__menu-item: a(href="#").sidebar__menu-link.sidebar__padding
+                    span.sidebar__menu-link-block
+                        span Теплоносители
+                        span.sidebar__menu-link-block-icon: +icon('arrow-menu')
+
+
+        .sidebar__bottom
+            br
+            br
+            .sidebar__content.sidebar__padding
+                p.sidebar__title Контакты
+
+                div.table-icon.table-icon--min
+                    .table-icon__row
+                        .table-icon__cell.table-icon__cell--icon.color-green: +icon('label-bg')
+                        .table-icon__cell г. Москва, ул. Архитектора Власова 55, офис 300
+                    .table-icon__row
+                        .table-icon__cell.table-icon__cell--icon.color-green: +icon('email-bg')
+                        .table-icon__cell: a(href='#').db.color-black: span.color-black__title info@far.ru
+                    .table-icon__row
+                        .table-icon__cell.table-icon__cell--icon.color-green: +icon('phone-bg')
+                        .table-icon__cell
+                            a(href='#').db.color-black: span.color-black__title +7 499 500 00 01
+                            a(href='#').db.color-black: span.color-black__title 8 800 550 33 45
+
+                br
+                hr.hr-margin-not
+            a(href="#").copyright.text-center
+                span.copyright__title.db Разработано в
+                span.copyright__logo: +img('general/copyright', 'png')

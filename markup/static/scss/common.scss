@@ -1,0 +1,116 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #6a6a6a;
+    font-weight: 400;
+}
+
+.page {
+    
+}
+
+.main-page{
+    display: table;
+    width: 100%;
+    vertical-align: top;
+    min-height: 100%;
+    &__cell{
+        display: table-cell;
+        &--sidebar{
+            position: relative;
+            width: 250px;
+        }
+    }
+}
+
+.page-padding{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.page-content {
+    //min-height: 100vh;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: space-between;
+}
+
+.copyright{
+    display: block;
+    font-size: 12px;
+    color: #858585;
+    line-height: 1.4em;
+    font-weight: 300;
+    padding: 13px 0;
+    &__logo{
+        opacity: .5;
+    }
+    &:hover{
+        .copyright__logo{
+            opacity: 1;
+        }
+    }
+}
+
+.db{
+    display: block;
+}
+
+.fwb{
+    font-weight: bold;
+}
+
+.table-icon{
+    display: table;
+    font-weight: 300;
+    &__row{
+        display: table-row;
+    }
+    &__cell{
+        display: table-cell;
+        padding: 4px 0;
+        vertical-align: top;
+        +*{
+            padding-left: 8px;
+        }
+        &--icon{
+            padding-top: 5px;
+        }
+    }
+    &--min{
+        font-size: 12px;
+        line-height: 1.3em;
+    }
+}
+.networks{
+    @include nl;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+    >li{
+        padding: 5px;
+        a{
+            display: block;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
+
+//.page__wrapper {
+//    min-height: 100%;
+//    margin-bottom: -50px;
+//}
+
+//* html .page__wrapper {
+//    height: 100%;
+//}
+
+//.page__buffer {
+//    height: 50px;
+//}

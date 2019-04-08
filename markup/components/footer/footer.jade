@@ -1,0 +1,39 @@
+mixin footer(data)
+    footer.footer.page-padding
+        .row
+            .col-3
+                ul.footer__menu
+                    li: a(href='#').color-white.footer__title: span.color-white__title Преимущества FAR
+                    li: a(href='#').color-white.footer__title: span.color-white__title Где купить?
+                    li: a(href='#').color-white.footer__title: span.color-white__title Стать партнером
+            .col-3
+                ul.footer__menu
+                    li
+                        a(href='#').color-white.footer__title: span.color-white__title Каталог продукции
+                        ul.footer__menu-small
+                            li: a(href='#').color-white: span.color-white__title Коллекторы
+                            li: a(href='#').color-white: span.color-white__title Радиаторы
+                            li: a(href='#').color-white: span.color-white__title Арматура
+                            li: a(href='#').color-white: span.color-white__title Теплоносители
+            .col-3
+                ul.footer__menu
+                    li
+                        a(href='#').color-white.footer__title: span.color-white__title Документация
+                        ul.footer__menu-small
+                            li: a(href='#').color-white: span.color-white__title Прайс-лист
+                            li: a(href='#').color-white: span.color-white__title Каталоги и буклеты
+                            li: a(href='#').color-white: span.color-white__title Технические паспорта
+                            li: a(href='#').color-white: span.color-white__title Чертежи
+                            li: a(href='#').color-white: span.color-white__title Сертификаты
+                            li: a(href='#').color-white: span.color-white__title Обучение
+
+            .col-3
+                p.footer__title Мы в социальных сетях
+                ul.networks
+                    li: a(href='#').color-white: +icon('facebook')
+                    li: a(href='#').color-white: +icon('instagram', 'icon__instagram', 40, 40)
+                    li: a(href='#').color-white: +icon('youtube')
+                    li: a(href='#').color-white: +icon('vk', 'icon__vk', 40, 40)
+
+        .footer__bottom #[a(href='#').color-white: span.color-white__title.color-white__title_viewBorder Правовая информация] с 2014-2016 АО ТД “Терморос”
+

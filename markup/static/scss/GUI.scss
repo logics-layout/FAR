@@ -1,0 +1,35 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+//@import "libraries/bootstrap/scaffolding";
+//@import "libraries/bootstrap/buttons";
+@import "libraries/bootstrap/type";
+@import "libraries/bootstrap/tables";
+//@import "libraries/bootstrap/forms";
+//@import "libraries/bootstrap/breadcrumbs";
+//@import "libraries/bootstrap/nav";
+//@import "libraries/bootstrap/dropdown";
+
+img{
+  max-width: 100%;
+}
+
+hr{
+  border-color: #e7e7e7;
+  margin: 30px 0;
+  &.hr-margin-not{
+    margin: 0;
+  }
+}
+
+ul{
+  padding-left: 18px;
+}
+
+
+
+
+
+@include text-border-bottom('white', #fff);
+@include text-border-bottom('green', $mainColor);
+@include text-border-bottom('black', #231d14);
