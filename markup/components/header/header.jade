@@ -1,2 +1,28 @@
 mixin header(data)
-    .header
+    .header.page-padding
+        .header__top
+            .d-flex.justify-content-between
+                .header__sections
+                    div
+                        a(href='#').color-black.icon-block.fz-min
+                            span.icon-block__icon.color-green: +icon('email')
+                            span.icon-block__title: span.color-black__title Обратная связь
+                    div
+                        a(href='#').color-black.icon-block
+                            span.icon-block__icon.color-green: +icon('phone')
+                            b.icon-block__title: span.color-black__title +7 499 500 00 01
+                .header__sections
+                    div
+                        a(href='#').color-black.icon-block
+                            span.icon-block__icon: +icon('search')
+                    div
+                        a(href='#').color-black.icon-block
+                            span.icon-block__icon: +icon('basket')
+        .header__bottom
+            ul.header__nemu
+                li: a(href='#') Каталог
+                li: a(href='#') Преимущества
+                li: a(href='#') Обучение
+                li: a(href='#') Где купить?
+                li: a(href='#') Техническая документация
+

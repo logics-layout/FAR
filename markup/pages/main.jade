@@ -25,7 +25,9 @@ html(class="no-js", lang="ru")
             .main-page__cell.main-page__cell--content
                 .page-content
                     .page-content__top
-                        section.page-padding
+                        +header(index)
+
+                        .page-padding.page-content__body
                             block content
 
                     .page-content__bottom

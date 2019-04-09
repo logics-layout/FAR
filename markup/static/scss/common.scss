@@ -33,10 +33,13 @@ html, body {
 }
 
 .page-content {
-    //min-height: 100vh;
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: space-between;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__body{
+        padding-top: 20px;
+    }
 }
 
 .copyright{
@@ -102,15 +105,23 @@ html, body {
     }
 }
 
-//.page__wrapper {
-//    min-height: 100%;
-//    margin-bottom: -50px;
-//}
+.icon-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -3px;
+    >*{
+        padding: 3px;
+    }
+    &__icon{
+        svg{
+            display: block;
+            fill: currentColor !important;
+        }
+    }
+    &__title{}
+}
 
-//* html .page__wrapper {
-//    height: 100%;
-//}
-
-//.page__buffer {
-//    height: 50px;
-//}
+.fz-min{
+    font-size: 0.88em;
+}

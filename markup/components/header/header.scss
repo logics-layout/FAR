@@ -1,0 +1,13 @@
+.header{
+  border-bottom: 4px solid $mainColor;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__sections{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -13px;
+    >*{
+      padding: 13px;
+    }
+  }
+}
